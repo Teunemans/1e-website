@@ -1,99 +1,96 @@
+.akbtn
+{
+ text-decoration: none;
+ border: solid black 2px;
+ border-radius: 2px;
+ padding: 5px;
+}
+
 body {
-  background-color: white;
- }
- 
- .gridcontainer {
-  display: grid;
-  gap: 10px;
-  grid-template-areas: 
-  "navcontainer navcontainer navcontainer"
-  "header header header" 
-  "main main sidebar" 
-  "footer footer";
-   
- }
- 
- .header {
-  grid-area: header;
-  display: grid;
-  border: blue solid 2px;
-  justify-content: center;
-  text-align: center;
-  border-radius: 5px;
-  background-color: #009BFF;
+ background-color: white;
+}
 
- }
- 
- .footer {
-  display: flex;
-  grid-area: footer;
-  border-radius: 5px;
-  background-color: #009BFF;
-  justify-content: center;
- }
- 
- .main {
-  display: grid;
-  grid-area: main;
-  border: solid 2px;
-  border-radius: 5px;
-  background-color: #009BFF;
- }
- 
- .sidebar {
-  grid-area: sidebar;
-  display: grid;
-  border: soldid 2px blue;
-  border-radius: 5px;
-  background-color: #009BFF;
- }
- 
- .resize {
-  width: 200px;
-  height: auto;
-  display: inline;
- }
- 
- h1 {
-  font-family: courier;
-  color: Gray;
-  border: solid 2px;
-  border-radius: 5px;
-  padding-left: 2px;
-  width: 200px;
-  background-color: #F5E9DE;
-  text-align: center;
- }
- 
- .navcontainer {
-  display: flex;
-  flex-basis: 100%;
-  background-color: gray;
-  padding-top: 12px;
-  padding-bottom: 12px;
- }
- 
- .navitem {
-  flex-basis: 25%;
-  color: white;
-  margin-right: 20px;
- }
+.gridcontainer {
+ display: grid;
+ gap: 10px;
+ grid-template-areas: 
+ "header header header"
+ "main main sidebar"
+ "footer footer"
+  
+}
 
- .navitem a:hover {
-  background-color: #2F9A66;
- }
- 
- .item {
-  text-decoration: none;
-  color: white;
-  font-family: arial;
-  padding: 12px;
-  width: 100px;
- }
- 
- .active {
- border:  white;
- border-radius: 1px;
- background-color: #201519;
- }
- 
+.header {
+ grid-area: header;
+ border: dashed 2px;
+ justify-content: center;
+ text-align: center;
+ border-radius: 5px;
+}
+
+.footer {
+ grid-area: footer;
+ border-radius: 5px;
+ background-color: #009BFF;
+}
+
+.main {
+ grid-area: main;
+ border: dotted 2px;
+ border-radius: 5px;
+ background-color: #009BFF;
+}
+
+.sidebar {
+ border: dashed 2px blue;
+ border-radius: 5px;
+ background-color: #009BFF;
+}
+
+.resize {
+ width: 200px;
+ height: auto;
+ display: inline;
+ text-align: center;
+}
+
+h1 {
+ font-family: courier;
+ color: Gray;
+ border: solid 2px;
+ border-radius: 5px;
+ padding-left: 2px;
+ width: auto;
+ background-color: #F5E9DE;
+ text-align: center;
+}
+
+.navcontainer {
+ display: flex;
+ flex-basis: 100%;
+ background-color: gray;
+ padding: 12px;
+ margin-bottom: 12px;
+}
+
+.navitem {
+ flex-basis: 25%;
+ color: white;
+ margin-right: 20px;
+}
+
+.item {
+ text-decoration: none;
+ color: white;
+ font-family: arial;
+ padding: 12px;
+ align-item: stretch;
+ width: 100px;
+}
+
+.active {
+border:  white;
+border-radius: 1px;
+background-color: #201519;
+}
+
