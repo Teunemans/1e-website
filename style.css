@@ -11,7 +11,7 @@ body {
 }
 
 .gridcontainer {
- display: grid;
+    display: grid;
  gap: 10px;
  grid-template-areas: 
  "header header header"
@@ -84,7 +84,6 @@ h1 {
  color: white;
  font-family: arial;
  padding: 12px;
- align-item: stretch;
  width: 100px;
 }
 
@@ -94,3 +93,10 @@ border-radius: 1px;
 background-color: #201519;
 }
 
+p {
+    padding: 12px;
+}
+
+.btnPadding {
+    padding: 12px;
+}
